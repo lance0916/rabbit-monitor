@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.snailwu</groupId>
-        <artifactId>monitor</artifactId>
+        <artifactId>rabbit-monitor</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 

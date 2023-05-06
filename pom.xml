@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.snailwu</groupId>
-    <artifactId>monitor</artifactId>
+    <artifactId>rabbit-monitor</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>monitor</name>
+    <name>rabbit-monitor</name>
 
     <modules>
         <module>monitor-core</module>
