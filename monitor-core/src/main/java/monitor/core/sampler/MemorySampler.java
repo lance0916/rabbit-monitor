@@ -1,10 +1,10 @@
-package com.monitor.core.sampler;
+package monitor.core.sampler;
 
-import static com.monitor.core.MonitorConstant.HEAP_MEMORY_NAME_PREFIX;
-import static com.monitor.core.MonitorConstant.NO_HEAP_MEMORY_NAME_PREFIX;
+import static monitor.core.MonitorConstant.HEAP_MEMORY_NAME_PREFIX;
+import static monitor.core.MonitorConstant.NO_HEAP_MEMORY_NAME_PREFIX;
 
-import com.monitor.core.Metric;
-import com.monitor.core.MetricsSampler;
+import monitor.core.Metric;
+import monitor.core.MetricsSampler;
 import java.lang.management.ManagementFactory;
 import java.lang.management.MemoryMXBean;
 import java.lang.management.MemoryUsage;

@@ -1,15 +1,15 @@
-package com.monitor.spring;
+package monitor.spring;
 
-import com.monitor.core.MetricsReporter;
-import com.monitor.core.MetricsSampler;
-import com.monitor.core.reporter.LogReporter;
-import com.monitor.core.sampler.DruidSampler;
-import com.monitor.core.sampler.GarbageCollectorSampler;
-import com.monitor.core.sampler.HikariSampler;
-import com.monitor.core.sampler.MemoryPoolSampler;
-import com.monitor.core.sampler.MemorySampler;
-import com.monitor.core.sampler.ThreadSampler;
-import com.monitor.core.sampler.TomcatSampler;
+import monitor.core.MetricsReporter;
+import monitor.core.MetricsSampler;
+import monitor.core.reporter.LogReporter;
+import monitor.core.sampler.DruidSampler;
+import monitor.core.sampler.GarbageCollectorSampler;
+import monitor.core.sampler.HikariSampler;
+import monitor.core.sampler.MemoryPoolSampler;
+import monitor.core.sampler.MemorySampler;
+import monitor.core.sampler.ThreadSampler;
+import monitor.core.sampler.TomcatSampler;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.LinkedBlockingQueue;

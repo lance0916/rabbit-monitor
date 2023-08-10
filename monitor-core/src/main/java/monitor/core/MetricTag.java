@@ -1,4 +1,4 @@
-package com.monitor.core;
+package monitor.core;
 
 public class MetricTag {
 

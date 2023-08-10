@@ -1,8 +1,8 @@
-package com.monitor.spring;
+package monitor.spring;
 
-import com.monitor.core.MetricsReporter;
-import com.monitor.core.MetricsSampler;
-import com.monitor.core.Metric;
+import monitor.core.MetricsReporter;
+import monitor.core.MetricsSampler;
+import monitor.core.Metric;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;

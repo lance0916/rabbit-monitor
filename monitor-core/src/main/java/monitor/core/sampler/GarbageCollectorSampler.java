@@ -1,9 +1,9 @@
-package com.monitor.core.sampler;
+package monitor.core.sampler;
 
-import com.monitor.core.Metric;
-import com.monitor.core.MetricsSampler;
-import com.monitor.core.MonitorConstant;
-import com.monitor.core.StrUtil;
+import monitor.core.Metric;
+import monitor.core.MetricsSampler;
+import monitor.core.MonitorConstant;
+import monitor.core.StrUtil;
 import java.lang.management.GarbageCollectorMXBean;
 import java.lang.management.ManagementFactory;
 import java.util.HashMap;

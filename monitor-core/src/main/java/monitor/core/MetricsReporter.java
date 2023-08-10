@@ -1,4 +1,4 @@
-package com.monitor.core;
+package monitor.core;
 
 import java.util.List;
 import org.slf4j.Logger;

@@ -1,10 +1,8 @@
-package com.monitor.core.sampler;
+package monitor.core.sampler;
 
-import static com.monitor.core.MonitorConstant.DRUID_NAME_PREFIX;
-
-import com.monitor.core.Metric;
-import com.monitor.core.MetricsSampler;
-import com.monitor.core.MetricsSamplerException;
+import monitor.core.Metric;
+import monitor.core.MetricsSampler;
+import monitor.core.MetricsSamplerException;
 import java.lang.management.ManagementFactory;
 import java.util.Collections;
 import java.util.HashMap;
@@ -19,6 +17,7 @@ import javax.management.MBeanServer;
 import javax.management.MalformedObjectNameException;
 import javax.management.ObjectName;
 import javax.management.ReflectionException;
+import monitor.core.MonitorConstant;
 
 /**
  * Druid 信息采集器
@@ -81,7 +80,7 @@ public class DruidSampler implements MetricsSampler {
             for (Attribute attribute : attributes) {
                 String name = attribute.getName();
                 Number value = (Number) attribute.getValue();
-                metrics.add(new Metric(DRUID_NAME_PREFIX + "." + attributeMap.get(name),
+                metrics.add(new Metric(MonitorConstant.DRUID_NAME_PREFIX + "." + attributeMap.get(name),
                     value, timestamp));
             }
         }

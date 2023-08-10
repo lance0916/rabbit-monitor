@@ -1,6 +1,6 @@
-package com.monitor.example;
+package monitor.example;
 
-import com.monitor.spring.MonitorConfiguration;
+import monitor.spring.MonitorConfiguration;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;

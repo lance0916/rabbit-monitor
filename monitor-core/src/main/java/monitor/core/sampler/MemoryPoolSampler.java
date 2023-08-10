@@ -1,8 +1,8 @@
-package com.monitor.core.sampler;
+package monitor.core.sampler;
 
-import com.monitor.core.Metric;
-import com.monitor.core.StrUtil;
-import com.monitor.core.MetricsSampler;
+import monitor.core.Metric;
+import monitor.core.StrUtil;
+import monitor.core.MetricsSampler;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.MemoryPoolMXBean;
@@ -12,7 +12,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
-import static com.monitor.core.MonitorConstant.MEMORY_NAME_PREFIX;
+import static monitor.core.MonitorConstant.MEMORY_NAME_PREFIX;
 
 /**
  * 内存池信息采集

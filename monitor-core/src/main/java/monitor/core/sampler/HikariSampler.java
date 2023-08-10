@@ -1,9 +1,9 @@
-package com.monitor.core.sampler;
+package monitor.core.sampler;
 
-import static com.monitor.core.MonitorConstant.HIKARI_NAME_PREFIX;
+import static monitor.core.MonitorConstant.HIKARI_NAME_PREFIX;
 
-import com.monitor.core.Metric;
-import com.monitor.core.MetricsSampler;
+import monitor.core.Metric;
+import monitor.core.MetricsSampler;
 import java.lang.management.ManagementFactory;
 import java.util.Collections;
 import java.util.HashMap;

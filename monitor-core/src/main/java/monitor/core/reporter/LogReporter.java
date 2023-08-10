@@ -1,7 +1,7 @@
-package com.monitor.core.reporter;
+package monitor.core.reporter;
 
-import com.monitor.core.MetricsReporter;
-import com.monitor.core.Metric;
+import monitor.core.MetricsReporter;
+import monitor.core.Metric;
 import java.util.List;
 
 /**

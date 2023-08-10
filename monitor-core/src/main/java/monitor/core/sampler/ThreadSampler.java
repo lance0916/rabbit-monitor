@@ -1,14 +1,13 @@
-package com.monitor.core.sampler;
+package monitor.core.sampler;
 
-import com.monitor.core.Metric;
-import com.monitor.core.MetricsSampler;
+import monitor.core.Metric;
+import monitor.core.MetricsSampler;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.ThreadMXBean;
 import java.util.LinkedList;
 import java.util.List;
-
-import static com.monitor.core.MonitorConstant.THREAD_NAME_PREFIX;
+import monitor.core.MonitorConstant;
 
 /**
  * 线程信息采集
@@ -27,19 +26,19 @@ public class ThreadSampler implements MetricsSampler {
 
         // 当前活动的线程数量，包括守护程序和非守护程序线程。
         int threadCount = threadMXBean.getThreadCount();
-        metrics.add(new Metric(THREAD_NAME_PREFIX + ".active", threadCount, timestamp));
+        metrics.add(new Metric(MonitorConstant.THREAD_NAME_PREFIX + ".active", threadCount, timestamp));
 
         // 守护线程的数量
         int daemonThreadCount = threadMXBean.getDaemonThreadCount();
-        metrics.add(new Metric(THREAD_NAME_PREFIX + ".daemon", daemonThreadCount, timestamp));
+        metrics.add(new Metric(MonitorConstant.THREAD_NAME_PREFIX + ".daemon", daemonThreadCount, timestamp));
 
         // 同时活动的线程峰值数量
         int peakThreadCount = threadMXBean.getPeakThreadCount();
-        metrics.add(new Metric(THREAD_NAME_PREFIX + ".peakActive", peakThreadCount, timestamp));
+        metrics.add(new Metric(MonitorConstant.THREAD_NAME_PREFIX + ".peakActive", peakThreadCount, timestamp));
 
         // 自JVM启动以来启动过的线程数量
         long totalStartedThreadCount = threadMXBean.getTotalStartedThreadCount();
-        metrics.add(new Metric(THREAD_NAME_PREFIX + ".total", totalStartedThreadCount, timestamp));
+        metrics.add(new Metric(MonitorConstant.THREAD_NAME_PREFIX + ".total", totalStartedThreadCount, timestamp));
 
         return metrics;
     }
